@@ -10,13 +10,13 @@ import LanguageDetector from 'i18next-browser-languagedetector';
 import defaults from './defaults.json';
 import en from './en/resource.json';
 import es from './es/resource.json';
-import pt from './pt/resource.json';
+import pt_br from './pt/resource.json';
 
 const resources = {
   defaults: { translation: defaults },
   en: { translation: en },
   es: { translation: es },
-  pt: { translation: pt }
+  pt: { translation: pt_br }
 };
 
 i18n
@@ -26,7 +26,7 @@ i18n
     resources,
 
     // do not load a fallback
-    fallbackLng: ['en', 'defaults'],
+    fallbackLng: ['pt', 'pt_br'],
 
     interpolation: {
       prefix: '[[',
