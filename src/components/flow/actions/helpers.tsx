@@ -165,21 +165,7 @@ export const renderAsset = (asset: Asset, endpoints: Endpoints) => {
       assetBody = (
         <>
           <span className={`${shared.node_label} fe-split`} />
-          <a
-            onMouseDown={(e: any) => {
-              e.preventDefault();
-              e.stopPropagation();
-            }}
-            onMouseUp={(e: any) => {
-              e.preventDefault();
-              e.stopPropagation();
-            }}
-            href={`${endpoints.editor}/${asset.id}`}
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            {asset.name}
-          </a>
+          {asset.name}
         </>
       );
       break;

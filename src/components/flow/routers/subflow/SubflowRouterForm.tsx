@@ -133,14 +133,8 @@ export default class SubflowRouterForm extends React.PureComponent<
                   url: this.context.config.endpoints.editor + '/' + this.state.flow.value.id
                 }}
               >
-                <a
-                  target="_"
-                  href={this.context.config.endpoints.editor + '/' + this.state.flow.value.id}
-                >
-                  [[flow]]
-                </a>{' '}
-                expects the following parameters to be set by this flow. These can be set using a{' '}
-                <span>Save Flow Result</span> action or directly below.
+                [[flow]] expects the following parameters to be set by this flow. These can be set
+                using a <span>Save Flow Result</span> action or directly below.
               </Trans>
             </p>
             <table className={styles.params}>
